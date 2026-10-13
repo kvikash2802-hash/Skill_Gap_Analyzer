@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Job Skill Gap Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Job Description Skill Gap Analyzer</h1>
+    <p>Find your matched and missing skills</p>
+
+    <label>Job Description</label>
+    <textarea id="jobDescription"
+        placeholder="Paste job description here"></textarea>
+
+    <label>Your Skills</label>
+    <textarea id="mySkills"
+        placeholder="Python, SQL, Pandas"></textarea>
+
+    <button onclick="analyzeSkills()">
+        Analyze Skills
+    </button>
+
+    <div id="result" class="result" hidden>
+        <h2>Analysis Result</h2>
+        <p id="required"></p>
+        <p id="matched"></p>
+        <p id="missing"></p>
+        <h3 id="percentage"></h3>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
